@@ -1,3 +1,19 @@
 import { Routes } from '@angular/router';
+import { BopItComponent } from './bop-it/bop-it.component';
+import { SecretSantaComponent } from './secret-santa/secret-santa.component';
+import { TarotGameComponent } from './tarot-game/tarot-game.component';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+    {
+        path: 'bop-it',
+        component: BopItComponent
+    },
+    {
+        path: 'secret-santa',
+        component: SecretSantaComponent
+    },
+    {
+        path: 'tarot-game',
+        component: TarotGameComponent
+    },
+];

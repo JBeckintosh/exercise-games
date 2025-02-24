@@ -1,6 +1,7 @@
 <h1>Tarot Game</h1>
 
-<app-loading *ngIf="isLoading"></app-loading>
-<div>
-    {{ deckOfCardsId }}
+<button (click)="drawThreeCards()">Draw 3 Cards</button>
+
+<div *ngFor="let card of deckOfCards.cards">
+    <img src="{{card.image}}" height="50px" weight="50px" />
 </div>
